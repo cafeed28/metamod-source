@@ -249,6 +249,8 @@ int SourceProvider::DetermineSourceEngine()
 	return SOURCE_ENGINE_PVKII;
 #elif SOURCE_ENGINE == SE_MCV
 	return SOURCE_ENGINE_MCV;
+#elif SOURCE_ENGINE == SE_CSSO
+	return SOURCE_ENGINE_CSSO;
 #else
 #error "SOURCE_ENGINE not defined to a known value"
 #endif
@@ -311,6 +313,8 @@ const char* SourceProvider::GetEngineDescription() const
 	return "Pirates, Vikings, and Knights II";
 #elif SOURCE_ENGINE == SE_MCV
 	return "Military Combat: Vietnam";
+#elif SOURCE_ENGINE == SE_CSSO
+	return "Counter-Strike: Source Offensive";
 #else
 #error "SOURCE_ENGINE not defined to a known value"
 #endif

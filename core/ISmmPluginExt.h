@@ -64,6 +64,7 @@
 #define SOURCE_ENGINE_PVKII				26				/**< Pirates, Vikings, and Knights II */
 #define SOURCE_ENGINE_MCV				27				/**< Military Conflict: Vietnam */
 #define SOURCE_ENGINE_CS2				28				/**< Counter-Strike 2 */
+#define SOURCE_ENGINE_CSSO				29				/**< Counter-Strike: Source Offensive */
 
 #define METAMOD_PLAPI_VERSION			16				/**< Version of this header file */
 #define METAMOD_PLAPI_NAME				"ISmmPlugin"	/**< Name of the plugin interface */
