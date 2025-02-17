@@ -103,6 +103,7 @@ static const char *backend_names[] =
 	"2.mcv",
 	"2.cs2",
 	"2.deadlock",
+	"2.csso",
 };
 
 #if defined _WIN32
@@ -378,7 +379,11 @@ mm_DetermineBackendS1(QueryValveInterface engineFactory, QueryValveInterface ser
 	TF2branch:
 					void *lib = (void *)serverFactory;
 					void *addr;
-					if (strcmp(game_name, "cstrike") == 0
+					if (strstr(game_name, "csso"))
+					{
+						return MMBackend_CSSO;
+					}
+					else if (strcmp(game_name, "cstrike") == 0
 						|| (addr = mm_FindPattern(lib, "DT_CSPlayerResource", sizeof("DT_CSPlayerResource") - 1)))
 					{
 						return MMBackend_CSS;

@@ -108,6 +108,7 @@ enum MetamodBackend
 	MMBackend_MCV,
 	MMBackend_CS2,
 	MMBackend_Deadlock,
+	MMBackend_CSSO,
 	MMBackend_UNKNOWN
 };
 
